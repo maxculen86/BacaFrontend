@@ -4,7 +4,7 @@
 Proyect has been created followign the requirements listed on https://www.dropbox.com/sh/gfqisikrhuslbu0/AADUE52toTZKPjM6AHmNrkKMa?dl=0&file_subpath=%2Ffront-assesment.pdf&preview=Assessment+full+stack.zip
 
 Logic is based on selecting characters by their main atributes such as: weight, heigth and hair colour.
-Also if the character's name is already know by the user, can be specifiedn on the search box.
+Also if the character's name is already know by the user, can be specified on the search box.
 After the pre-selection it's done select the character by cicking on the name.
 
 ##Runnig the code
