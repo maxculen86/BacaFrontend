@@ -1,0 +1,16 @@
+<div style="text-align:center">
+    <mat-toolbar>
+    {{ title }}
+    </mat-toolbar>
+  <app-search-inhabitants (search)="onSearch($event)"></app-search-inhabitants>
+  <app-inhabitant-filter 
+      [weights]="weights" 
+      [heights]="heights" 
+      [hairs]="hairs"
+      (filter)="onFilter($event)">
+  </app-inhabitant-filter>
+  <router-outlet></router-outlet>
+  <app-inhabitant-list [inhabitants]="inhabitants"></app-inhabitant-list>
+
+</div>
+

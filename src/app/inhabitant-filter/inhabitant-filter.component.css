@@ -1,0 +1,14 @@
+.filter {
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+    justify-items: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.filter-header {
+    width: 100%;
+    height: 100%;
+}
+

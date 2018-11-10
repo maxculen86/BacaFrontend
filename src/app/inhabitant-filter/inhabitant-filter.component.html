@@ -1,0 +1,31 @@
+<div layout="row" layout-align="left" class="filter-container">
+    <mat-expansion-panel (opened)="onOpen()">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Filter Options
+          </mat-panel-title>
+          <mat-panel-description>
+            More filters
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div layout="row" layout-align="center center" class="filter">
+          <h4>Weight selection</h4>
+          <div layout="row" layout-align="left" *ngFor="let weight of weights">
+            <mat-checkbox #weightCheck type="checkbox" name="" id="" (change)="onCheckWeight(weightCheck.value)" value={{weight}}>{{weight}} to {{weight + 5}} kg</mat-checkbox> 
+          </div>
+        </div>
+        <div layout="row" layout-align="left center" class="filter">
+          <h4>Height selection</h4>
+          <div layout="row" layout-align="left" *ngFor="let height of heights">
+            <mat-checkbox #heightCheck type="checkbox" name="" id="" (change)="onCheckHeight(heightCheck.value)" value={{height}}>{{height}} to {{height + 5}} cm</mat-checkbox>
+          </div>
+        </div>
+        <div layout="row" layout-align="left center" class="filter">
+            <h4>Hair colour selection</h4>
+            <div layout="row" layout-align="left" *ngFor="let hair of hairs">
+              <mat-checkbox #hairCheck type="checkbox" name="" id="" (change)="onCheckHair(hairCheck.value)" value={{hair}}>{{hair}}</mat-checkbox>
+            </div>
+        </div>
+    </mat-expansion-panel>
+        
+</div>

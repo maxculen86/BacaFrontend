@@ -1,0 +1,11 @@
+.inhabitant-row {
+    font-size: 14px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.inhabitant-ref {
+    width: 40px;
+    color: rgb(2, 114, 148);
+    display: inline-block;
+}

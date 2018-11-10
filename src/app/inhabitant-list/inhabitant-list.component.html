@@ -1,0 +1,18 @@
+<div class="inhabitant-list-container">
+  <div *ngIf="inhabitants.length < 15; else elseBlock">
+    <mat-list>
+      <li *ngFor="let inhabitant of inhabitants | slice:1:20">
+        <app-inhabitant-info [inhabitant]="inhabitant"></app-inhabitant-info>
+      </li>
+    </mat-list>
+  </div>
+  
+  <ng-template #elseBlock>
+    <mat-list>
+      <mat-list-item *ngFor="let inhabitant of inhabitants | slice:1:100">
+        <app-inhabitant-row [inhabitant]="inhabitant"></app-inhabitant-row>
+      </mat-list-item>
+    </mat-list>
+    <p *ngIf="inhabitants.length > 100">List too long. Please redifine your search</p>
+  </ng-template>
+</div>

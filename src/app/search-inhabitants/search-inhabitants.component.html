@@ -1,0 +1,12 @@
+<form class="search-inhabitants-container">
+  <mat-form-field class="search-field">
+    <input matInput  
+      #inhabitantSearch 
+      placeholder="Inhabitant search"
+      (keyup)="onSearch(inhabitantSearch.value)"
+      [formControl]="searchField" 
+      type="search" 
+      name="inhabitantSearch" 
+      id="">
+  </mat-form-field>
+</form>
